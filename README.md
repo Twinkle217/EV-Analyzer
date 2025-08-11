@@ -1,51 +1,55 @@
-# Electricity-Usage-Pricing-Dashboard
+# ⚡ EV Analyzer
 
-An interactive dashboard built with *Streamlit, **Pandas, and **Plotly* that visualizes electricity usage, pricing trends, and source file contributions across various congestion zones and load factors.
+An interactive dashboard built with *Streamlit, **Pandas, and **Altair* that visualizes electric vehicle specifications, performance metrics, and predicts driving range using a machine learning model.
 
-🚀 *Live App*:  
+---
+
+## 🚀 Live App  
 👉 [Click to View Dashboard](https://ev-analyzer-9eopxvdfgi2vhgbnnuz5kc.streamlit.app/)
 
 ---
 
-📌 Features
+## 📌 Features
 
-- 🎛️ *Filter Panel*: Interactively filter data by:
-  - Utility
-  - Congestion Zone
-  - Product
+### 📊 Brand & Model Insights
+- *Top 10 Brands* by number of models
+- *Most Efficient EVs* (Wh/km)
+- *Segment & Body Type Distribution* with bar charts
 
-- 📈 *Monthly Rate Trend*:
-  - Line chart showing the average rate for the first 12 months
+### 📈 Performance Visualizations
+- Battery Capacity vs Range  
+- Efficiency vs Range  
+- Torque vs Range
 
-- 🧭 *Load Factor Distribution*:
-  - Pie chart breakdown based on load factors
+### 🧠 Range Prediction
+- User inputs *battery capacity, **efficiency, and **torque*
+- Predicts *driving range* using a Linear Regression model
+- Categorizes results as Short, Mid, or High range
 
-- 📂 *Source File Distribution*:
-  - Bar chart showing how many entries came from each source file
+### 📄 Dataset Preview
+- Displays first few rows of the loaded datasets
 
-- 📊 *Key Metrics (KPIs)*:
-  - Total Rows
-  - Unique Utilities
-  - Source File Count
+---
 
+## 📁 Dataset Details
+The datasets used contain:
+- *EV Specifications*: brand, model, battery capacity, efficiency, torque, range, segment, body type
+- *Units*: kWh, Wh/km, Nm, km
+- Multiple files:
+  - with_Feature.xlsx
+  - Electric_Data_Updated.xlsx
 
-📁 Dataset Details
+---
 
-The dataset used (Cleaned_And_Combined_Data_Updated.xlsx) contains:
-- Monthly rate columns: 1 Month to 60 Month
-- Attributes such as:
-  - Utility
-  - Congestion Zone
-  - Product
-  - Load Factor
-  - Annual Usage
-  - 
 ## 🛠 Tech Stack
 
-| Tool        | Purpose                          |
-|-------------|----------------------------------|
-| Python      | Data manipulation & backend      |
-| Streamlit   | Frontend and web app deployment  |
-| Pandas      | Data handling and filtering      |
-| Plotly      | Interactive visualizations       |
-| Openpyxl    | Excel file support               |
+| Tool         | Purpose                              |
+|--------------|--------------------------------------|
+| Python       | Data manipulation & backend logic    |
+| Streamlit    | Web app frontend & deployment        |
+| Pandas       | Data handling and cleaning           |
+| Altair       | Interactive charts                   |
+| Matplotlib   | Additional visualizations            |
+| Scikit-learn | Machine learning model               |
+| Joblib       | Model saving/loading                 |
+| Openpyxl     | Excel file support                   |cel file support               |
