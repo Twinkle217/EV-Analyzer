@@ -4,7 +4,7 @@ import joblib
 from sklearn.linear_model import LinearRegression
 from sklearn.model_selection import train_test_split
 import matplotlib.pyplot as plt
-import os
+
 
 # Set page config
 st.set_page_config(page_title="EV Analyzer", layout="wide")
@@ -233,6 +233,7 @@ st.altair_chart(combined_chart, use_container_width=True)
 # Display the data
 st.subheader("📊 Dataset Preview")
 st.dataframe(df.head())
+
 
 
 
