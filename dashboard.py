@@ -13,7 +13,7 @@ st.set_page_config(page_title="EV Analyzer", layout="wide")
 #df = pd.read_csv(csv_path)
 
 # Load data
-df = pd.read_csv("C:\\Users\\Twinkle Parmar\\Group Project\\Data with feature.csv")
+df = pd.read_csv("Data with feature.csv")
 
 
 # Title
@@ -233,6 +233,7 @@ st.altair_chart(combined_chart, use_container_width=True)
 # Display the data
 st.subheader("📊 Dataset Preview")
 st.dataframe(df.head())
+
 
 
 
