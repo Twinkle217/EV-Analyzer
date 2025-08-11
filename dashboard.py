@@ -9,11 +9,11 @@ import os
 # Set page config
 st.set_page_config(page_title="EV Analyzer", layout="wide")
 
-csv_path = os.path.join(os.path.dirname(__file__), "Data_with_feature.csv")
-df = pd.read_csv(csv_path)
+#csv_path = os.path.join(os.path.dirname(__file__), "Data_with_feature.csv")
+#df = pd.read_csv(csv_path)
 
 # Load data
-#df = pd.read_csv("C://Users//Twinkle Parmar//Group Project\\Data with feature.csv")
+df = pd.read_csv("C:\\Users\\Twinkle Parmar\\Group Project\\Data with feature.csv")
 
 
 # Title
@@ -188,7 +188,7 @@ st.markdown(f"""
 st.subheader("📈 Data Insights")
 
 # Load data
-df = pd.read_csv("C:\\Users\\Twinkle Parmar\\Group Project\\Data with feature.csv")
+#df = pd.read_csv("C:\\Users\\Twinkle Parmar\\Group Project\\Data with feature.csv")
 
 # Define features and target
 features = ['battery_capacity_kWh', 'efficiency_wh_per_km', 'torque_nm']
@@ -233,5 +233,6 @@ st.altair_chart(combined_chart, use_container_width=True)
 # Display the data
 st.subheader("📊 Dataset Preview")
 st.dataframe(df.head())
+
 
 
